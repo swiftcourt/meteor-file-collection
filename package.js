@@ -7,7 +7,7 @@
 var currentVersion = '1.3.8';
 
 Package.describe({
-  summary: 'Collections that efficiently store files using MongoDB GridFS, with built-in HTTP support (uncoffee version)',
+  summary: 'Collections that efficiently store files using MongoDB GridFS (noncoffee version)',
   name: 'edemaine:file-collection',
   version: currentVersion,
   git: 'https://github.com/edemaine/meteor-file-collection.git'
@@ -27,7 +27,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.use('ecmascript');
+  api.use('ecmascript@0.12.4');
   api.use('webapp@1.3.13', 'server');
   api.use('mongo@1.1.15', ['server', 'client']);
   api.use('minimongo@1.0.20', 'server');
@@ -47,7 +47,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function (api) {
   api.use('edemaine:file-collection@' + currentVersion, ['server', 'client']);
-  api.use('ecmascript');
+  api.use('ecmascript@0.12.4');
   api.use('tinytest@1.0.12', ['server', 'client']);
   api.use('test-helpers@1.0.11', ['server','client']);
   api.use('http@1.2.11', ['server','client']);
