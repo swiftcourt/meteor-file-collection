@@ -40,7 +40,9 @@ Package.onUse(function(api) {
   api.addFiles('src/http_access_server.js', 'server');
   api.addFiles('src/resumable_client.js', 'client');
   api.addFiles('src/gridFS_client.js', 'client');
+  api.addFiles('src/share.js');
   api.export('FileCollection');
+  api.export('Resumable', 'client');
 });
 
 Package.onTest(function (api) {
