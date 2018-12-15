@@ -4,7 +4,9 @@
 #     See included LICENSE file for details.
 ############################################################################
 
-if Meteor.isServer
+   import share from './share.js'
+
+   #if Meteor.isServer
 
    mongodb = Npm.require 'mongodb'
    grid = Npm.require 'gridfs-locking-stream'

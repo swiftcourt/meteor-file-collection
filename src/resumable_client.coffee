@@ -4,6 +4,9 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import share from './share.js'
+import Resumable from '../resumable/resumable.js'
+
 if Meteor.isClient
 
    # This is a polyfill for bind(), added to make phantomjs 1.9.7 work

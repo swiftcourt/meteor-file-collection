@@ -4,6 +4,8 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import share from './share.js'
+
 if Meteor.isServer
 
    through2 = Npm.require 'through2'

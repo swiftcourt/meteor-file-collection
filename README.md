@@ -1,6 +1,19 @@
 # file-collection
 
-[![Build Status](https://travis-ci.org/vsivsi/meteor-file-collection.svg)](https://travis-ci.org/vsivsi/meteor-file-collection)
+## Non-coffee version
+
+This `edemaine:file-collection` package is just a compiled version of
+[vsivsi:file-collection](https://github.com/vsivsi/meteor-file-collection)
+via CoffeeScript 1.12.7 (with a tiny `var` removal to expose `FileCollection`
+as an export), to avoid any CoffeeScript dependency.
+
+The only difference is to use `meteor add edemaine:file-collection`
+(and `meteor remove vsivsi:file-collection` if necessary).
+
+All tests passed via `meteor test-packages ./`
+
+The remaining documentation below is from
+[vsivsi:file-collection](https://github.com/vsivsi/meteor-file-collection).
 
 ## Notice!
 
@@ -192,7 +205,7 @@ I've only tested with Meteor v0.9.x and v1.x.x, and older versions run on Meteor
 
 To add to your project, run:
 
-    meteor add vsivsi:file-collection
+    meteor add edemaine:file-collection
 
 The package exposes a global object `FileCollection` on both client and server.
 
@@ -216,7 +229,7 @@ A more advanced example that implements a basic image gallery with upload and do
 To run tests (using Meteor tiny-test):
 
 ```
-git clone --recursive https://github.com/vsivsi/meteor-file-collection FileCollection
+git clone --recursive https://github.com/edemaine/meteor-file-collection FileCollection
 cd FileCollection
 meteor test-packages ./
 ```

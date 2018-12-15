@@ -4,7 +4,9 @@
 #     See included LICENSE file for details.
 ############################################################################
 
-if Meteor.isClient
+   import share from './share.js'
+
+   #if Meteor.isClient
 
    class FileCollection extends Mongo.Collection
 

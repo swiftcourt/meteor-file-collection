@@ -4,6 +4,8 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import share from './share.js'
+
 share.defaultChunkSize = 2*1024*1024 - 1024
 share.defaultRoot = 'fs'
 
