@@ -4,13 +4,13 @@
 ###     See included LICENSE file for details.
 ***************************************************************************/
 
-var currentVersion = '1.3.9';
+var currentVersion = '2.0.0';
 
 Package.describe({
   summary: 'Collections that efficiently store files using MongoDB GridFS (noncoffee version)',
-  name: 'edemaine:file-collection',
+  name: 'swiftcourt:file-collection',
   version: currentVersion,
-  git: 'https://github.com/edemaine/meteor-file-collection.git'
+  git: 'https://github.com/swiftcourt/meteor-file-collection.git'
 });
 
 Npm.depends({
@@ -46,7 +46,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use('edemaine:file-collection@' + currentVersion, ['server', 'client']);
+  api.use('swiftcourt:file-collection@' + currentVersion, ['server', 'client']);
   api.use('ecmascript@0.9.0');
   api.use('tinytest@1.0.12', ['server', 'client']);
   api.use('test-helpers@1.0.11', ['server','client']);
