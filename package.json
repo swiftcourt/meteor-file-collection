@@ -1,0 +1,16 @@
+{
+    "name": "@swiftcourt/meteor-file-collection",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "publishConfig": { 
+        "registry": "https://npm.pkg.github.com/" 
+    },
+    "repository": "git://github.com/swiftcourt/meteor-file-collection.git",
+    "scripts": {
+        "test": "./node_modules/.bin/jest",
+        "tdd": "./node_modules/.bin/jest --watchAll"
+    },
+    "author": "Swiftcourt AB",
+    "license": "ISC"
+}
